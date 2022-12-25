@@ -16,13 +16,13 @@ function Navbar() {
   };
   return (
     <nav className="nav">
-      <a href="#" className="nav__brand">
-        TRAVERSE
-      </a>
+      <Link to='/' className="nav__item">
+             TRAVERSE
+          </Link>
       <ul className={active}>
         <li className="nav__item">
-          <Link to='/' className="nav__item">
-            Ana Sayfa
+        <Link to='/' className="nav__item">
+             Ana Sayfa
           </Link>
         </li>
         <li className="nav__item">

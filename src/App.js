@@ -4,7 +4,7 @@ import Home from "./Home";
 import Tpage from "./T";
 import Navbar from './navbar';
 import MapPage from './components/MapPage';
-import News from './components/News/News';
+import News from "./components/News/News"
 
 const App = () => {
   return (
@@ -28,6 +28,7 @@ const App = () => {
           <News />
         </Route>
       </Switch>
+    
     </Router>
     </>
   );
