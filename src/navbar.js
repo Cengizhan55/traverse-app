@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "../src/navbar.css";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import Logo from "./traverse2.png";
+
 function Navbar() {
   const [active, setActive] = useState("nav__menu");
   const [icon, setIcon] = useState("nav__toggler");
@@ -17,8 +19,8 @@ function Navbar() {
   return (
     <nav className="nav">
       <Link to='/' className="nav__item">
-             TRAVERSE
-          </Link>
+             <img className="logo" src={Logo} alt="logo"></img>
+      </Link>
       <ul className={active}>
         <li className="nav__item">
         <Link to='/' className="nav__item">

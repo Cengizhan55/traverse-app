@@ -2,15 +2,14 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from "./Home";
 import Tpage from "./T";
-import Navbar from './navbar';
 import MapPage from './components/MapPage';
 import News from "./components/News/News"
+import Header from './components/Header/Header';
 
 const App = () => {
   return (
-    <>
      <Router>
-      <Navbar />
+      <Header />
       <Switch>
         <Route exact path='/'>
           <Home />
@@ -28,9 +27,7 @@ const App = () => {
           <News />
         </Route>
       </Switch>
-    
     </Router>
-    </>
   );
 };
 

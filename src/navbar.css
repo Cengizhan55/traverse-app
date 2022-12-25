@@ -19,6 +19,8 @@ a {
 }
 
 .nav {
+  padding-left: 10%;
+  padding-right: 10%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -29,12 +31,18 @@ a {
   text-transform: uppercase;
 }
 
+.logo {
+  width: 10%;
+  height: 10%;
+}
+
 .nav__menu {
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 3rem;
 }
+
 .nav__toggler {
   display: none;
 }

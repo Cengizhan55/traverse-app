@@ -1,9 +1,9 @@
 import React from 'react';
-import { Autocomplete } from '@react-google-maps/api';
 import { AppBar, Toolbar, Typography, InputBase, Box } from '@material-ui/core';
-import SearchIcon from '@material-ui/icons/Search';
-
+import Button from '@mui/material/Button';
+import Logo from "../../traverse2.png";
 import useStyles from './styles.js';
+import { Link } from 'react-router-dom';
 
 const Header = ({ onPlaceChanged, onLoad }) => {
   const classes = useStyles();
@@ -11,21 +11,14 @@ const Header = ({ onPlaceChanged, onLoad }) => {
   return (
     <AppBar position="static">
       <Toolbar className={classes.toolbar}>
-        <Typography variant="h5" className={classes.title}>
-          Travel Advisor
-        </Typography>
+        <img src={Logo} style={{'width': '10%', 'height': '10%'}} ></img>
+        
         <Box display="flex">
-          <Typography variant="h6" className={classes.title}>
-            Explore new places
-          </Typography>
-          <Autocomplete onLoad={onLoad} onPlaceChanged={onPlaceChanged}>
-            <div className={classes.search}>
-              <div className={classes.searchIcon}>
-                <SearchIcon />
-              </div>
-              <InputBase placeholder="Search…" classes={{ root: classes.inputRoot, input: classes.inputInput }} />
-            </div>
-          </Autocomplete>
+          <Link to='/'><Button color='inherit'>Home</Button></Link>
+          <Link to='/map'><Button color='inherit'>Map</Button></Link>
+          <Link to='/news'><Button color='inherit'>News</Button></Link>
+          <Link to='/'><Button color='inherit'>Transport Card</Button></Link>
+          <Link to='/'><Button color='inherit'>Profile</Button></Link>
         </Box>
       </Toolbar>
     </AppBar>
