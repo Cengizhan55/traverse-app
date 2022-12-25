@@ -7,10 +7,9 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Grid } from '@material-ui/core/'
 import Warning from '../Warning';
+import { Link } from 'react-router-dom';
 
 function News() {
-
-    const [open, setOpen] = useState(false);
 
     const data = [
         {
@@ -58,7 +57,6 @@ function News() {
             <div style={{"margin": "10px 0px 10px 0px"}}>
                 <h1 style={{"textAlign": "center" }}>NEWS</h1>
             </div>
-            <Warning open={open} setOpen={setOpen}/>
             <Grid container
                 spacing={2}
                 direction="row"
@@ -82,8 +80,8 @@ function News() {
                                 </Typography>
                             </CardContent>
                             <CardActions>
-                                <Button size="small" onClick={() => setOpen(true)}>Share</Button>
-                                <Button size="small" onClick={() => setOpen(true)}>Learn More</Button>
+                                <Link to='/error' style={{color: 'black'}} > <Button size="small"> Share</Button></Link>
+                                <Link to='/error' style={{color: 'black'}} > <Button size="small"> Publish</Button></Link>
                             </CardActions>
                         </Card>
                     </Grid>

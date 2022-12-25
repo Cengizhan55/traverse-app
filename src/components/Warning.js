@@ -1,16 +1,26 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import Alert from '@mui/material/Alert';
+import { Snackbar } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
-import Collapse from '@mui/material/Collapse';
+
 import CloseIcon from '@mui/icons-material/Close';
 
-export default function Warning( {open, setOpen}) {
+export default function Warning({open, setOpen}) {
+
+    const handleClick = () => {
+      setOpen(true);
+    };
+  
+    const handleClose = (event, reason) => {
+
+  
+      setOpen(false);
+    };
+
     return (
-        <Collapse in={open}>
-            <Alert
-                severity='warning'
-                action={
+        <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+            <Alert action={
                     <IconButton
                         aria-label="close"
                         color="inherit"
@@ -21,11 +31,9 @@ export default function Warning( {open, setOpen}) {
                     >
                         <CloseIcon fontSize="inherit" />
                     </IconButton>
-                }
-                sx={{ mb: 2 }}
-            >
-                Bu işlev projeye eklenmemiştir.
+                } onClose={handleClose} severity="info" sx={{ width: '100%' }}>
+                Bu özellik henüz eklenmemiştir.
             </Alert>
-        </Collapse>
+        </Snackbar>
     )
 }

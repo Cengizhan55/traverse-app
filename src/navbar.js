@@ -48,9 +48,9 @@ function Navbar() {
           </Link>
         </li>
         <li className="nav__item">
-          <a href="" className="nav__link">
+          <Link to='/error' className="nav__link">
             Profile
-          </a>
+          </Link>
         </li>
       </ul>
       <div onClick={navToggle} className={icon}>

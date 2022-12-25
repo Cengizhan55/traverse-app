@@ -32,7 +32,7 @@ const BusCard = () => {
           başvurması gerekiyor. <hr></hr>
           Yüz yüze yapılan başvurulara ek olarak İzmirim Kart başvurusu internet
           üzerinden
-          <a href="https://www.izmirimkart.com.tr/tr/Anasayfa">
+          <a style={{color: 'black'}} href="https://www.izmirimkart.com.tr/tr/Anasayfa">
             https://www.izmirimkart.com.tr/tr/Anasayfa
           </a>{" "}
           adresine girerek de yapabiliyor. Bu sitede kimlerin hangi tür kartı
