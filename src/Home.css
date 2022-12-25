@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+    background-image: url("background.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.landing-page {
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.landing-left {
+    padding-left: 10%;
+    padding-top: 25vh;
+    width: 35%;
+}
+
+.landing-header {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.landing-para {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+/* CSS */
+.landing-button {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
