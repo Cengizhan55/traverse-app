@@ -1,0 +1,27 @@
+.grid-container {
+  display: grid;
+  column-gap: 300px;
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+  padding-left: 280px;
+}
+
+.grid-item {
+  padding: 30px;
+  padding-left: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.title {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+}
+
+.text {
+  font-size: 20px;
+}
+
+.line {
+  border: 1px solid black;
+}

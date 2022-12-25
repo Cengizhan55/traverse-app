@@ -1,30 +1,38 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Home";
 import Tpage from "./T";
-import MapPage from './components/MapPage';
-import News from "./components/News/News"
-import Header from './components/Header/Header';
+import MapPage from "./components/MapPage";
+import News from "./components/News/News";
+import Header from "./components/Header/Header";
+import BusCard from "./components/BusCard/BusCard";
+import TravelGuide from "./components/TravelGuide/TravelGuide";
 
 const App = () => {
   return (
-     <Router>
+    <Router>
       <Header />
       <Switch>
-        <Route exact path='/'>
+        <Route exact path="/">
           <Home />
         </Route>
 
-        <Route exact path='/t'>
+        <Route exact path="/t">
           <Tpage />
         </Route>
 
-        <Route exact path='/map'>
+        <Route exact path="/map">
           <MapPage />
         </Route>
 
-        <Route exact path='/news'>
+        <Route exact path="/news">
           <News />
+        </Route>
+        <Route exact path="/busCard">
+          <BusCard />
+        </Route>
+        <Route exact path="/travelGuide">
+          <TravelGuide />
         </Route>
       </Switch>
     </Router>
