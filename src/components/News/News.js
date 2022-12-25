@@ -14,41 +14,41 @@ function News() {
     const data = [
         {
             id: 1,
-            baslik: "İmamoglu tutuklandı",
-            aciklama: "İmamoglu dün verilen kararla beraber tutuklandı ve kendisine siyasi yasak da getirildi.",
-            image: "https://i.ytimg.com/vi/L-Y13BR4OFc/maxresdefault.jpg"
+            baslik: "Lorem ipsum dolor sit amet",
+            aciklama: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            image: "https://i.haberglobal.com.tr/rcman/Cw960h540q95gm/storage/files/images/2021/09/23/haberglobal-sondakika-1jxM.png"
         },
         {
             id: 2,
-            baslik: "Beşiktaş şampiyon oldu",
-            aciklama: "2022/2023 süperlig sezonunun şampiyonu son hafta kendi evinde gs'yi 12-0 mağlup eden beşiktaş oldu. Kara kartal bir kez daha tr'nin en büyüğü olduğunu kanıtladı.",
-            image: "https://i01.sozcucdn.com/wp-content/uploads/2021/05/15/iecrop/sampiyon-besiktas-depo_16_9_1621110128.jpg"
+            baslik: "Lorem ipsum dolor sit amet",
+            aciklama: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            image: "https://i.haberglobal.com.tr/rcman/Cw960h540q95gm/storage/files/images/2021/09/23/haberglobal-sondakika-1jxM.png"
         },
         {
             id: 3,
-            baslik: "İmamoglu tutuklandı",
-            aciklama: "İmamoglu dün verilen kararla beraber tutuklandı ve kendisine siyasi yasak da getirildi.",
-            image: "https://i.ytimg.com/vi/L-Y13BR4OFc/maxresdefault.jpg"
+            baslik: "Lorem ipsum dolor sit amet",
+            aciklama: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            image: "https://i.haberglobal.com.tr/rcman/Cw960h540q95gm/storage/files/images/2021/09/23/haberglobal-sondakika-1jxM.png"
         },
         {
             id: 4,
-            baslik: "Beşiktaş şampiyon oldu",
-            aciklama: "2022/2023 süperlig sezonunun şampiyonu son hafta kendi evinde gs'yi 12-0 mağlup eden beşiktaş oldu. Kara kartal bir kez daha tr'nin en büyüğü olduğunu kanıtladı.",
-            image: "https://i01.sozcucdn.com/wp-content/uploads/2021/05/15/iecrop/sampiyon-besiktas-depo_16_9_1621110128.jpg"
+            baslik: "Lorem ipsum dolor sit amet",
+            aciklama: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            image: "https://i0.wp.com/journo.com.tr/wp-content/uploads/2020/12/son-dakika-haberleri.jpg?fit=1200%2C695&ssl=1"
 
         },
         {
             id: 5,
-            baslik: "İmamoglu tutuklandı",
-            aciklama: "İmamoglu dün verilen kararla beraber tutuklandı ve kendisine siyasi yasak da getirildi.",
-            image: "https://i.ytimg.com/vi/L-Y13BR4OFc/maxresdefault.jpg"
+            baslik: "Lorem ipsum dolor sit amet",            
+            aciklama: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            image: "https://i0.wp.com/journo.com.tr/wp-content/uploads/2020/12/son-dakika-haberleri.jpg?fit=1200%2C695&ssl=1"
 
         },
         {
             id: 6,
-            baslik: "Beşiktaş şampiyon oldu",
-            aciklama: "2022/2023 süperlig sezonunun şampiyonu son hafta kendi evinde gs'yi 12-0 mağlup eden beşiktaş oldu. Kara kartal bir kez daha tr'nin en büyüğü olduğunu kanıtladı.",
-            image: "https://i01.sozcucdn.com/wp-content/uploads/2021/05/15/iecrop/sampiyon-besiktas-depo_16_9_1621110128.jpg"
+            baslik: "Lorem ipsum dolor sit amet",
+            aciklama: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            image: "https://i0.wp.com/journo.com.tr/wp-content/uploads/2020/12/son-dakika-haberleri.jpg?fit=1200%2C695&ssl=1"
         },
     ]
 
