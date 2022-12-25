@@ -4,6 +4,7 @@ import Home from "./Home";
 import Tpage from "./T";
 import Navbar from './navbar';
 import MapPage from './components/MapPage';
+import Footer from './Footer';
 
 const App = () => {
 
@@ -26,6 +27,7 @@ const App = () => {
           <MapPage />
         </Route>
       </Switch>
+    
     </Router>
      
     </>
