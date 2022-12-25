@@ -14,22 +14,28 @@ const Header = ({ onPlaceChanged, onLoad }) => {
         <img src={Logo} style={{ width: "10%", height: "10%" }}></img>
 
         <Box display="flex">
-          <Link to="/">
+          <Link to="/" style={{ textDecoration: "none", color: "white" }}>
             <Button color="inherit">Home</Button>
           </Link>
-          <Link to="/map">
+          <Link to="/map" style={{ textDecoration: "none", color: "white" }}>
             <Button color="inherit">Map</Button>
           </Link>
-          <Link to="/news">
+          <Link to="/news" style={{ textDecoration: "none", color: "white" }}>
             <Button color="inherit">News</Button>
           </Link>
-          <Link to="/busCard">
+          <Link
+            to="/busCard"
+            style={{ textDecoration: "none", color: "white" }}
+          >
             <Button color="inherit">Transport Card</Button>
           </Link>
-          <Link to="/travelGuide">
+          <Link
+            to="/travelGuide"
+            style={{ textDecoration: "none", color: "white" }}
+          >
             <Button color="inherit">TravelGuide</Button>
           </Link>
-          <Link to="/">
+          <Link to="/" style={{ textDecoration: "none", color: "white" }}>
             <Button color="inherit">Profile</Button>
           </Link>
         </Box>
