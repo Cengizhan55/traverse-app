@@ -24,32 +24,32 @@ function Navbar() {
       <ul className={active}>
         <li className="nav__item">
         <Link to='/' className="nav__item">
-             Ana Sayfa
-          </Link>
-        </li>
-        <li className="nav__item">
-        <Link to='/' className="nav__item">
-             Profil
+             Home
           </Link>
         </li>
         <li className="nav__item">
         <Link to='/map' className="nav__item">
-             Harita
+             Map
           </Link>
         </li>
         <li className="nav__item">
-        <Link to='/t' className="nav__item">
-             TPAGE
+        <Link to='/news' className="nav__item">
+             News
           </Link>
         </li>
         <li className="nav__item">
-          <Link to='/news' className="nav__item">
-            NEWS
+        <Link to='/busCard' className="nav__item">
+             Transport Card
           </Link>
         </li>
         <li className="nav__item">
-          <a href="#" className="nav__link">
-            İletişim
+          <Link to='/travelGuide' className="nav__item">
+            Travel Guide
+          </Link>
+        </li>
+        <li className="nav__item">
+          <a href="" className="nav__link">
+            Profile
           </a>
         </li>
       </ul>
