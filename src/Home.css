@@ -1,15 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
-:root {
+.landing-root {
     background-image: url("background.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
-}
-
-.landing-page {
     height: 100vh;
-    width: 100vw;
-
 }
 
 .landing-left {
