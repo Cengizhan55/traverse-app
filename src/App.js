@@ -4,17 +4,13 @@ import Home from "./Home";
 import Tpage from "./T";
 import Navbar from './navbar';
 import MapPage from './components/MapPage';
-import Footer from './Footer';
 
 const App = () => {
-
-
   return (
     <>
      <Router>
       <Navbar />
       <Switch>
-
         <Route exact path='/'>
           <Home />
         </Route>
@@ -26,10 +22,13 @@ const App = () => {
         <Route exact path='/map'>
           <MapPage />
         </Route>
+
+        <Route exact path='/news'>
+          <News />
+        </Route>
       </Switch>
     
     </Router>
-     
     </>
   );
 };

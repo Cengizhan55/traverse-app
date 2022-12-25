@@ -21,9 +21,9 @@ function Navbar() {
           </Link>
       <ul className={active}>
         <li className="nav__item">
-        <Link to='/' className="nav__item">
-             HOME
-          </Link>
+          <a href="#" className="nav__link">
+            Ana Sayfa
+          </a>
         </li>
         <li className="nav__item">
         <Link to='/' className="nav__item">
@@ -38,6 +38,11 @@ function Navbar() {
         <li className="nav__item">
         <Link to='/t' className="nav__item">
              TPAGE
+          </Link>
+        </li>
+        <li className="nav__item">
+          <Link to='/news' className="nav__item">
+            NEWS
           </Link>
         </li>
         <li className="nav__item">
