@@ -21,9 +21,9 @@ function Navbar() {
           </Link>
       <ul className={active}>
         <li className="nav__item">
-          <a href="#" className="nav__link">
-            Ana Sayfa
-          </a>
+        <Link to='/' className="nav__item">
+             Ana Sayfa
+          </Link>
         </li>
         <li className="nav__item">
         <Link to='/' className="nav__item">
