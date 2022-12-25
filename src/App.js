@@ -1,10 +1,8 @@
 import React, {useState} from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Home";
-import Tpage from "./T";
 import MapPage from "./components/MapPage";
 import News from "./components/News/News";
-import Header from "./components/Header/Header";
 import BusCard from "./components/BusCard/BusCard";
 import TravelGuide from "./components/TravelGuide/TravelGuide";
 import Navbar from "./navbar";

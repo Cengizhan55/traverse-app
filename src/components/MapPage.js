@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { CssBaseline, Grid } from '@material-ui/core';
 
-import { getPlacesData, getWeatherData } from '../api/travelAdvisorAPI';
+import { getPlacesData } from '../api/travelAdvisorAPI';
 
 import List from './List/List';
 import Map from './Map/Map';
@@ -16,11 +16,9 @@ const [rating, setRating] = useState('');
 const [coords, setCoords] = useState({});
 const [bounds, setBounds] = useState(null);
 
-const [weatherData, setWeatherData] = useState([]);
 const [filteredPlaces, setFilteredPlaces] = useState([]);
 const [places, setPlaces] = useState([]);
 
-const [autocomplete, setAutocomplete] = useState(null);
 const [childClicked, setChildClicked] = useState(null);
 const [isLoading, setIsLoading] = useState(false);
 
@@ -40,9 +38,6 @@ useEffect(() => {
   if (bounds) {
     setIsLoading(true);
 
-    getWeatherData(coords.lat, coords.lng)
-      .then((data) => setWeatherData(data));
-
     getPlacesData(type, bounds.sw, bounds.ne)
       .then((data) => {
         setPlaces(data.filter((place) => place.name && place.num_reviews > 0));
@@ -53,14 +48,7 @@ useEffect(() => {
   }
 }, [bounds, type]);
 
-const onLoad = (autoC) => setAutocomplete(autoC);
 
-const onPlaceChanged = () => {
-  const lat = autocomplete.getPlace().geometry.location.lat();
-  const lng = autocomplete.getPlace().geometry.location.lng();
-
-  setCoords({ lat, lng });
-};
 
 
     return (
@@ -88,7 +76,7 @@ const onPlaceChanged = () => {
       setCoords={setCoords}
       coords={coords}
       places={filteredPlaces.length ? filteredPlaces : places}
-      weatherData={weatherData}
+
     />
   </Grid>
 </Grid>
